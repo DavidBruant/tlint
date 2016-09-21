@@ -1,0 +1,22 @@
+{
+  "name": "tlint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBruant/tlint.git"
+  },
+  "author": "David Bruant <bruant.d@gmail.com> (https://twitter.com/DavidBruant)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidBruant/tlint/issues"
+  },
+  "homepage": "https://github.com/DavidBruant/tlint#readme",
+  "dependencies": {
+    "typescript": "^1.8.10"
+  }
+}
