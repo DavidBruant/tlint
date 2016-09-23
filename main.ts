@@ -9,8 +9,7 @@ import r_noStringConcat from "./rules/no-string-concat";
 
 const fileNames = process.argv.slice(2);
 const options: ts.CompilerOptions = {
-    target: ts.ScriptTarget.ES5, 
-    module: ts.ModuleKind.CommonJS
+    allowJs: true
 }
 
 // Build a program using the set of root file names in fileNames
