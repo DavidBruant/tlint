@@ -22,7 +22,7 @@ let checker = program.getTypeChecker();
 for (const sourceFile of program.getSourceFiles()) {
     console.log('sourceFile', sourceFile.fileName)
     if(!sourceFile.fileName.endsWith('/lib.d.ts')){
-        ts.forEachChild(sourceFile, (node: ts.Node) => {
+        ts.forEachChild(sourceFile, node => {
             r_setTimeoutNoString(node, checker);
         });
     }

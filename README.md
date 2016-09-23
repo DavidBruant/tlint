@@ -1,3 +1,5 @@
 # tlint
 
-`tsc main.ts && node main.js test.ts`
+```
+tsc main.ts && node main.js tests/setTimeout/test.ts
+```
