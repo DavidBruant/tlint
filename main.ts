@@ -5,6 +5,7 @@ import * as ts from "typescript";
 import * as fs from "fs";
 
 import r_setTimeoutNoString from "./rules/setTimeout-no-string";
+import r_noStringConcat from "./rules/no-string-concat";
 
 const fileNames = process.argv.slice(2);
 const options: ts.CompilerOptions = {
@@ -24,6 +25,7 @@ for (const sourceFile of program.getSourceFiles()) {
     if(!sourceFile.fileName.endsWith('/lib.d.ts')){
         ts.forEachChild(sourceFile, node => {
             r_setTimeoutNoString(node, checker);
+            r_noStringConcat(node, checker);
         });
     }
 }
